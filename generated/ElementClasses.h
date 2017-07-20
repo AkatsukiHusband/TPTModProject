@@ -188,6 +188,11 @@
 #define PT_GRVT 177
 #define PT_DRAY 178
 #define PT_CRMC 179
+#define PT_MEAT 180
+#define PT_BEEF 181
+#define PT_GMET 182
+#define PT_GBEF 183
+#define PT_CUME 184
 
 class Element_NONE: public Element
 {
@@ -1720,6 +1725,42 @@ public:
 	virtual ~Element_CRMC();
 	static int update(UPDATE_FUNC_ARGS);
 	static int graphics(GRAPHICS_FUNC_ARGS);
+};
+
+class Element_MEAT : public Element
+{
+public:
+	Element_MEAT();
+	virtual ~Element_MEAT();
+};
+
+class Element_BEEF : public Element
+{
+public:
+	Element_BEEF();
+	virtual ~Element_BEEF();
+};
+
+class Element_GMET : public Element
+{
+public:
+	Element_GMET();
+	virtual ~Element_GMET();
+};
+
+class Element_GBEF : public Element
+{
+public:
+	Element_GBEF();
+	virtual ~Element_GBEF();
+};
+
+class Element_CUME : public Element
+{
+public:
+	Element_CUME();
+	virtual ~Element_CUME();
+	static int update(UPDATE_FUNC_ARGS);
 };
 
 std::vector<Element> GetElements();

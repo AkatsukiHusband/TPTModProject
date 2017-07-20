@@ -183,5 +183,10 @@ std::vector<Element> GetElements()
 	elements.push_back(Element_GRVT());
 	elements.push_back(Element_DRAY());
 	elements.push_back(Element_CRMC());
+	elements.push_back(Element_MEAT());
+	elements.push_back(Element_BEEF());
+	elements.push_back(Element_GMET());
+	elements.push_back(Element_GBEF());
+	elements.push_back(Element_CUME());
 	return elements;
 }

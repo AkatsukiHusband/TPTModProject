@@ -1121,6 +1121,21 @@
     <ClCompile Include="src\SDLCompat.cpp">
       <Filter>Source Files\libs\sdl</Filter>
     </ClCompile>
+    <ClCompile Include="MEAT.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
+    <ClCompile Include="BEEF.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
+    <ClCompile Include="CUME.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
+    <ClCompile Include="GMET.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
+    <ClCompile Include="GBEF.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="generated\ElementClasses.h">

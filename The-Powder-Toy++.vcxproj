@@ -128,8 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BEEF.cpp" />
+    <ClCompile Include="CUME.cpp" />
+    <ClCompile Include="GBEF.cpp" />
     <ClCompile Include="generated\ElementClasses.cpp" />
     <ClCompile Include="generated\ToolClasses.cpp" />
+    <ClCompile Include="GMET.cpp" />
+    <ClCompile Include="MEAT.cpp" />
     <ClCompile Include="src\bson\BSON.cpp" />
     <ClCompile Include="src\client\Client.cpp" />
     <ClCompile Include="src\client\Download.cpp" />
