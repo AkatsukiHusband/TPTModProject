@@ -140,14 +140,6 @@ int Element_FIRE::update(UPDATE_FUNC_ARGS)
 							parts[r>>8].ctype = PT_CRMC;
 						}
 					}
-					else if (rt == PT_HEAC && parts[i].ctype == PT_HEAC)
-					{
-						if (parts[r>>8].temp > sim->elements[PT_HEAC].HighTemperature && rand()%200)
-						{
-							sim->part_change_type(r>>8, x+rx, y+ry, PT_LAVA);
-							parts[r>>8].ctype = PT_HEAC;
-						}
-					}
 				}
 
 				if ((surround_space || sim->elements[rt].Explosive) &&

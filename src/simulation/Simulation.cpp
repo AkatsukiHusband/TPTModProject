@@ -2116,9 +2116,6 @@ void Simulation::init_can_move()
 			can_move[movingType][PT_BVBR] = 1;
 		}
 
-		//SAWD cannot be displaced by other powders
-		if (elements[movingType].Properties & TYPE_PART)
-			can_move[movingType][PT_SAWD] = 0;
 	}
 	//a list of lots of things PHOT can move through
 	// TODO: replace with property
@@ -2279,8 +2276,6 @@ int Simulation::try_move(int i, int x, int y, int nx, int ny)
 		if ((r&0xFF) == PT_WOOD)
 		{
 			float vel = std::sqrt(std::pow(parts[i].vx, 2) + std::pow(parts[i].vy, 2));
-			if (vel > 5)
-				part_change_type(r>>8, nx, ny, PT_SAWD);
 		}
 		if (!(elements[parts[i].type].Properties & TYPE_ENERGY))
 			return 0;
@@ -3198,7 +3193,6 @@ int Simulation::create_part(int p, int x, int y, int t, int v)
 		break;
 	case PT_DTEC:
 	case PT_TSNS:
-	case PT_LSNS:
 		parts[i].tmp2 = 2;
 		break;
 	case PT_VINE:
@@ -3932,7 +3926,7 @@ void Simulation::UpdateParticles(int start, int end)
 									if (ctemph >= pres+elements[PT_CRMC].HighTemperature)
 										s = 0;
 								}
-								else if (elements[parts[i].ctype].HighTemperatureTransition == PT_LAVA || parts[i].ctype == PT_HEAC)
+								else if (elements[parts[i].ctype].HighTemperatureTransition == PT_LAVA)
 								{
 									if (pt >= elements[parts[i].ctype].HighTemperature)
 										s = 0;

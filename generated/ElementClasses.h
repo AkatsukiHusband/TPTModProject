@@ -188,12 +188,6 @@
 #define PT_GRVT 177
 #define PT_DRAY 178
 #define PT_CRMC 179
-#define PT_HEAC 180
-#define PT_SAWD 181
-#define PT_POLO 182
-#define PT_RFRG 183
-#define PT_RFGL 184
-#define PT_LSNS 185
 
 class Element_NONE: public Element
 {
@@ -1726,58 +1720,6 @@ public:
 	virtual ~Element_CRMC();
 	static int update(UPDATE_FUNC_ARGS);
 	static int graphics(GRAPHICS_FUNC_ARGS);
-};
-
-class Element_HEAC: public Element
-{
-public:
-	Element_HEAC();
-	virtual ~Element_HEAC();
-	struct IsInsulator;
-	static IsInsulator isInsulator;
-	template<class BinaryPredicate> static bool CheckLine(Simulation* sim, int x1, int y1, int x2, int y2, BinaryPredicate func);
-	static int update(UPDATE_FUNC_ARGS);
-};
-
-class Element_SAWD: public Element
-{
-public:
-	Element_SAWD();
-	virtual ~Element_SAWD();
-	
-};
-
-class Element_POLO: public Element
-{
-public:
-	Element_POLO();
-	virtual ~Element_POLO();
-	static int update(UPDATE_FUNC_ARGS);
-	static int graphics(GRAPHICS_FUNC_ARGS);
-};
-
-class Element_RFRG: public Element
-{
-public:
-	Element_RFRG();
-	virtual ~Element_RFRG();
-	static int update(UPDATE_FUNC_ARGS);
-};
-
-class Element_RFGL: public Element
-{
-public:
-	Element_RFGL();
-	virtual ~Element_RFGL();
-	
-};
-
-class Element_LSNS: public Element
-{
-public:
-	Element_LSNS();
-	virtual ~Element_LSNS();
-	static int update(UPDATE_FUNC_ARGS);
 };
 
 std::vector<Element> GetElements();

@@ -13,27 +13,11 @@
 #define TOOL_PGRV 4
 #define TOOL_VAC 3
 
-class Tool_Heat: public SimTool
+class Tool_Air: public SimTool
 {
 public:
-	Tool_Heat();
-	virtual ~Tool_Heat();
-	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
-};
-
-class Tool_NGrv: public SimTool
-{
-public:
-	Tool_NGrv();
-	virtual ~Tool_NGrv();
-	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
-};
-
-class Tool_Vac: public SimTool
-{
-public:
-	Tool_Vac();
-	virtual ~Tool_Vac();
+	Tool_Air();
+	virtual ~Tool_Air();
 	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
 };
 
@@ -45,19 +29,11 @@ public:
 	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
 };
 
-class Tool_PGrv: public SimTool
+class Tool_Heat: public SimTool
 {
 public:
-	Tool_PGrv();
-	virtual ~Tool_PGrv();
-	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
-};
-
-class Tool_Air: public SimTool
-{
-public:
-	Tool_Air();
-	virtual ~Tool_Air();
+	Tool_Heat();
+	virtual ~Tool_Heat();
 	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
 };
 
@@ -66,6 +42,30 @@ class Tool_Mix: public SimTool
 public:
 	Tool_Mix();
 	virtual ~Tool_Mix();
+	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
+};
+
+class Tool_NGrv: public SimTool
+{
+public:
+	Tool_NGrv();
+	virtual ~Tool_NGrv();
+	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
+};
+
+class Tool_PGrv: public SimTool
+{
+public:
+	Tool_PGrv();
+	virtual ~Tool_PGrv();
+	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
+};
+
+class Tool_Vac: public SimTool
+{
+public:
+	Tool_Vac();
+	virtual ~Tool_Vac();
 	virtual int Perform(Simulation * sim, Particle * cpart, int x, int y, float strength);
 };
 
