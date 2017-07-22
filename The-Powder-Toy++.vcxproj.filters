@@ -1136,6 +1136,12 @@
     <ClCompile Include="GBEF.cpp">
       <Filter>Source Files\simulation\element</Filter>
     </ClCompile>
+    <ClCompile Include="FLOR.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
+    <ClCompile Include="BRED.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="generated\ElementClasses.h">

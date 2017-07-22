@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_SAND PT_SAND 44
+
 Element_GBEF::Element_GBEF()
 {
 	Identifier = "DEFAULT_PT_GBEF";

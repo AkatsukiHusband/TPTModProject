@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_DMND PT_DMND 28
+
 Element_BEEF::Element_BEEF()
 {
 	Identifier = "DEFAULT_PT_BEEF";

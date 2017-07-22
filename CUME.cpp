@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_CUME PT_CUME 2
+
 Element_CUME::Element_CUME()
 {
 	Identifier = "DEFAULT_PT_CUME";
@@ -44,7 +44,6 @@ Element_CUME::Element_CUME()
 	Update = &Element_CUME::update;
 }
 
-//#TPT-Directive ElementHeader Element_CUME static int update(UPDATE_FUNC_ARGS)
 int Element_CUME::update(UPDATE_FUNC_ARGS)
 {
 	int r, rx, ry;
