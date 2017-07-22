@@ -193,6 +193,8 @@
 #define PT_GMET 182
 #define PT_GBEF 183
 #define PT_CUME 184
+#define PT_FLOR 185
+#define PT_BRED 186
 
 class Element_NONE: public Element
 {
@@ -1761,6 +1763,21 @@ public:
 	Element_CUME();
 	virtual ~Element_CUME();
 	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_FLOR : public Element
+{
+public:
+	Element_FLOR();
+	virtual ~Element_FLOR();
+	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_BRED : public Element
+{
+public:
+	Element_BRED();
+	virtual ~Element_BRED();
 };
 
 std::vector<Element> GetElements();

@@ -188,5 +188,7 @@ std::vector<Element> GetElements()
 	elements.push_back(Element_GMET());
 	elements.push_back(Element_GBEF());
 	elements.push_back(Element_CUME());
+	elements.push_back(Element_FLOR());
+	elements.push_back(Element_BRED());
 	return elements;
 }

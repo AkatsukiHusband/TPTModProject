@@ -129,7 +129,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BEEF.cpp" />
+    <ClCompile Include="BRED.cpp" />
     <ClCompile Include="CUME.cpp" />
+    <ClCompile Include="FLOR.cpp" />
     <ClCompile Include="GBEF.cpp" />
     <ClCompile Include="generated\ElementClasses.cpp" />
     <ClCompile Include="generated\ToolClasses.cpp" />

@@ -1,5 +1,5 @@
 #include "simulation/Elements.h"
-//#TPT-Directive ElementClass Element_GMET PT_GMET 44
+
 Element_GMET::Element_GMET()
 {
 	Identifier = "DEFAULT_PT_GMET";
