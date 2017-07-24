@@ -128,15 +128,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BEEF.cpp" />
-    <ClCompile Include="BRED.cpp" />
-    <ClCompile Include="CUME.cpp" />
-    <ClCompile Include="FLOR.cpp" />
-    <ClCompile Include="GBEF.cpp" />
     <ClCompile Include="generated\ElementClasses.cpp" />
     <ClCompile Include="generated\ToolClasses.cpp" />
-    <ClCompile Include="GMET.cpp" />
-    <ClCompile Include="MEAT.cpp" />
     <ClCompile Include="src\bson\BSON.cpp" />
     <ClCompile Include="src\client\Client.cpp" />
     <ClCompile Include="src\client\Download.cpp" />
@@ -345,6 +338,7 @@
     <ClCompile Include="src\simulation\elements\GRVT.cpp" />
     <ClCompile Include="src\simulation\elements\GUNP.cpp" />
     <ClCompile Include="src\simulation\elements\H2.cpp" />
+    <ClCompile Include="src\simulation\elements\HEAC.cpp" />
     <ClCompile Include="src\simulation\elements\HSWC.cpp" />
     <ClCompile Include="src\simulation\elements\ICEI.cpp" />
     <ClCompile Include="src\simulation\elements\IGNT.cpp" />
@@ -364,6 +358,7 @@
     <ClCompile Include="src\simulation\elements\LOLZ.cpp" />
     <ClCompile Include="src\simulation\elements\LOVE.cpp" />
     <ClCompile Include="src\simulation\elements\LRBD.cpp" />
+    <ClCompile Include="src\simulation\elements\LSNS.cpp" />
     <ClCompile Include="src\simulation\elements\MERC.cpp" />
     <ClCompile Include="src\simulation\elements\METL.cpp" />
     <ClCompile Include="src\simulation\elements\MORT.cpp" />
@@ -387,6 +382,7 @@
     <ClCompile Include="src\simulation\elements\PLNT.cpp" />
     <ClCompile Include="src\simulation\elements\PLSM.cpp" />
     <ClCompile Include="src\simulation\elements\PLUT.cpp" />
+    <ClCompile Include="src\simulation\elements\POLO.cpp" />
     <ClCompile Include="src\simulation\elements\PPIP.cpp" />
     <ClCompile Include="src\simulation\elements\PQRT.cpp" />
     <ClCompile Include="src\simulation\elements\PROT.cpp" />
@@ -402,10 +398,13 @@
     <ClCompile Include="src\simulation\elements\PVOD.cpp" />
     <ClCompile Include="src\simulation\elements\QRTZ.cpp" />
     <ClCompile Include="src\simulation\elements\RBDM.cpp" />
+    <ClCompile Include="src\simulation\elements\RFGL.cpp" />
+    <ClCompile Include="src\simulation\elements\RFRG.cpp" />
     <ClCompile Include="src\simulation\elements\RIME.cpp" />
     <ClCompile Include="src\simulation\elements\RPEL.cpp" />
     <ClCompile Include="src\simulation\elements\SALT.cpp" />
     <ClCompile Include="src\simulation\elements\SAND.cpp" />
+    <ClCompile Include="src\simulation\elements\SAWD.cpp" />
     <ClCompile Include="src\simulation\elements\SHLD1.cpp" />
     <ClCompile Include="src\simulation\elements\SHLD2.cpp" />
     <ClCompile Include="src\simulation\elements\SHLD3.cpp" />

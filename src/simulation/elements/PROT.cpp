@@ -131,6 +131,8 @@ int Element_PROT::update(UPDATE_FUNC_ARGS)
 			element = PT_PLUT;
 		else if (parts[i].tmp > 420)
 			element = PT_URAN;
+		else if (parts[i].tmp > 310)
+			element = PT_POLO;
 		else if (parts[i].tmp > 250)
 			element = PT_PLSM;
 		else if (parts[i].tmp > 100)

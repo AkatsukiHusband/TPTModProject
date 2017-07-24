@@ -1488,15 +1488,15 @@ void GameView::OnKeyPress(int key, Uint16 character, bool shift, bool ctrl, bool
 	case SDLK_F5:
 		c->ReloadSim();
 		break;
-#if defined(DEBUG) || defined(SNAPSHOT)
 	case 'a':
-		if (ctrl)
+		if ((Client::Ref().GetAuthUser().UserElevation == User::ElevationModerator
+		     || Client::Ref().GetAuthUser().UserElevation == User::ElevationAdmin
+		     || Client::Ref().GetAuthUser().Username == "Mrprocom") && ctrl)
 		{
 			std::string authorString = Client::Ref().GetAuthorInfo().toStyledString();
 			new InformationMessage("Save authorship info", authorString, true);
 		}
 		break;
-#endif
 	case 'r':
 		if (ctrl)
 			c->ReloadSim();
@@ -2332,7 +2332,7 @@ void GameView::OnDraw()
 				sampleInfo << ", Tmp: " << sample.particle.tmp;
 
 				// only elements that use .tmp2 show it in the debug HUD
-				if (type == PT_CRAY || type == PT_DRAY || type == PT_EXOT || type == PT_LIGH || type == PT_SOAP || type == PT_TRON || type == PT_VIBR || type == PT_VIRS || type == PT_WARP || type == PT_LCRY || type == PT_CBNW || type == PT_TSNS || type == PT_DTEC || type == PT_PSTN)
+				if (type == PT_CRAY || type == PT_DRAY || type == PT_EXOT || type == PT_LIGH || type == PT_SOAP || type == PT_TRON || type == PT_VIBR || type == PT_VIRS || type == PT_WARP || type == PT_LCRY || type == PT_CBNW || type == PT_TSNS || type == PT_DTEC || type == PT_LSNS || type == PT_PSTN)
 					sampleInfo << ", Tmp2: " << sample.particle.tmp2;
 
 				sampleInfo << ", Pressure: " << std::fixed << sample.AirPressure;

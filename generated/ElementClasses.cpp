@@ -183,12 +183,11 @@ std::vector<Element> GetElements()
 	elements.push_back(Element_GRVT());
 	elements.push_back(Element_DRAY());
 	elements.push_back(Element_CRMC());
-	elements.push_back(Element_MEAT());
-	elements.push_back(Element_BEEF());
-	elements.push_back(Element_GMET());
-	elements.push_back(Element_GBEF());
-	elements.push_back(Element_CUME());
-	elements.push_back(Element_FLOR());
-	elements.push_back(Element_BRED());
+	elements.push_back(Element_HEAC());
+	elements.push_back(Element_SAWD());
+	elements.push_back(Element_POLO());
+	elements.push_back(Element_RFRG());
+	elements.push_back(Element_RFGL());
+	elements.push_back(Element_LSNS());
 	return elements;
 }

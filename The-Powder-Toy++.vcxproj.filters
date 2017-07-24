@@ -431,6 +431,9 @@
     <ClCompile Include="src\simulation\elements\LRBD.cpp">
       <Filter>Source Files\simulation\element</Filter>
     </ClCompile>
+    <ClCompile Include="src\simulation\elements\LSNS.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
     <ClCompile Include="src\simulation\elements\MERC.cpp">
       <Filter>Source Files\simulation\element</Filter>
     </ClCompile>
@@ -1115,31 +1118,25 @@
     <ClCompile Include="src\simulation\simtools\Mix.cpp">
       <Filter>Source Files\simulation\toolmenutools</Filter>
     </ClCompile>
+    <ClCompile Include="src\simulation\elements\RFGL.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
+    <ClCompile Include="src\simulation\elements\RFRG.cpp">
+      <Filter>Source Files\simulation\element</Filter>
+    </ClCompile>
     <ClCompile Include="src\gui\game\Favorite.cpp">
       <Filter>Source Files\game</Filter>
     </ClCompile>
     <ClCompile Include="src\SDLCompat.cpp">
       <Filter>Source Files\libs\sdl</Filter>
     </ClCompile>
-    <ClCompile Include="MEAT.cpp">
+    <ClCompile Include="src\simulation\elements\HEAC.cpp">
       <Filter>Source Files\simulation\element</Filter>
     </ClCompile>
-    <ClCompile Include="BEEF.cpp">
+    <ClCompile Include="src\simulation\elements\POLO.cpp">
       <Filter>Source Files\simulation\element</Filter>
     </ClCompile>
-    <ClCompile Include="CUME.cpp">
-      <Filter>Source Files\simulation\element</Filter>
-    </ClCompile>
-    <ClCompile Include="GMET.cpp">
-      <Filter>Source Files\simulation\element</Filter>
-    </ClCompile>
-    <ClCompile Include="GBEF.cpp">
-      <Filter>Source Files\simulation\element</Filter>
-    </ClCompile>
-    <ClCompile Include="FLOR.cpp">
-      <Filter>Source Files\simulation\element</Filter>
-    </ClCompile>
-    <ClCompile Include="BRED.cpp">
+    <ClCompile Include="src\simulation\elements\SAWD.cpp">
       <Filter>Source Files\simulation\element</Filter>
     </ClCompile>
   </ItemGroup>
