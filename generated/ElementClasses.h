@@ -194,6 +194,13 @@
 #define PT_RFRG 183
 #define PT_RFGL 184
 #define PT_LSNS 185
+#define PT_MEAT 186
+#define PT_BEEF 187
+#define PT_GMET 188
+#define PT_GBEF 189
+#define PT_CUME 190
+#define PT_FLOR 191
+#define PT_BRED 192
 
 class Element_NONE: public Element
 {
@@ -1778,6 +1785,57 @@ public:
 	Element_LSNS();
 	virtual ~Element_LSNS();
 	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_MEAT : public Element
+{
+public:
+	Element_MEAT();
+	virtual ~Element_MEAT();
+};
+
+class Element_BEEF : public Element
+{
+public:
+	Element_BEEF();
+	virtual ~Element_BEEF();
+};
+
+class Element_GMET : public Element
+{
+public:
+	Element_GMET();
+	virtual ~Element_GMET();
+};
+
+class Element_GBEF : public Element
+{
+public:
+	Element_GBEF();
+	virtual ~Element_GBEF();
+};
+
+class Element_CUME : public Element
+{
+public:
+	Element_CUME();
+	virtual ~Element_CUME();
+	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_FLOR : public Element
+{
+public:
+	Element_FLOR();
+	virtual ~Element_FLOR();
+	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_BRED : public Element
+{
+public:
+	Element_BRED();
+	virtual ~Element_BRED();
 };
 
 std::vector<Element> GetElements();

@@ -19,6 +19,14 @@
 #define MINOR_VERSION 0
 #endif
 
+#ifndef MOD_VERSION
+#define MOD_VERSION 1
+#endif
+
+#ifndef MOD_MINOR_VERSION
+#define MOD_MINOR_VERSION 0
+#endif
+
 #ifndef BUILD_NUM
 #define BUILD_NUM 331
 #endif
