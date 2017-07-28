@@ -196,5 +196,8 @@ std::vector<Element> GetElements()
 	elements.push_back(Element_CUME());
 	elements.push_back(Element_FLOR());
 	elements.push_back(Element_BRED());
+	elements.push_back(Element_ROCK());
+	elements.push_back(Element_SCSR());
+	elements.push_back(Element_PAPR());
 	return elements;
 }
