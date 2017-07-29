@@ -201,6 +201,9 @@
 #define PT_CUME 190
 #define PT_FLOR 191
 #define PT_BRED 192
+#define PT_ROCK 193
+#define PT_SCSR 194
+#define PT_PAPR 195
 
 class Element_NONE: public Element
 {
@@ -1836,6 +1839,30 @@ class Element_BRED : public Element
 public:
 	Element_BRED();
 	virtual ~Element_BRED();
+};
+
+class Element_ROCK : public Element
+{
+public:
+	Element_ROCK();
+	virtual ~Element_ROCK();
+	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_SCSR : public Element
+{
+public:
+	Element_SCSR();
+	virtual ~Element_SCSR();
+	static int update(UPDATE_FUNC_ARGS);
+};
+
+class Element_PAPR : public Element
+{
+public:
+	Element_PAPR();
+	virtual ~Element_PAPR();
+	static int update(UPDATE_FUNC_ARGS);
 };
 
 std::vector<Element> GetElements();

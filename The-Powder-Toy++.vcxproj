@@ -137,6 +137,9 @@
     <ClCompile Include="generated\ToolClasses.cpp" />
     <ClCompile Include="GMET.cpp" />
     <ClCompile Include="MEET.cpp" />
+    <ClCompile Include="PAPR.cpp" />
+    <ClCompile Include="ROCK.cpp" />
+    <ClCompile Include="SCSR.cpp" />
     <ClCompile Include="src\bson\BSON.cpp" />
     <ClCompile Include="src\client\Client.cpp" />
     <ClCompile Include="src\client\Download.cpp" />
